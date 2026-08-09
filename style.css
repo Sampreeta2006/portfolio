@@ -821,21 +821,52 @@ margin-bottom:8px;
     }
 
     .contact-container{
-        grid-template-columns:1fr;
-    }
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    width:100%;
+}
 
+.contact-info{
+    width:100%;
+}
+
+.contact-form{
+    width:100%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    box-sizing:border-box;
+}
+
+.contact-form button{
+    width:100%;
+    max-width:200px;
+}
 
     /* ===== FOOTER ===== */
 
     .footer-content{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+    width:100%;
+}
 
-    .social-icons{
-        justify-content:center;
-    }
+.footer-content > *{
+    width:100%;
+    min-width:0;
+}
 
+   .social-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
 }
 /* ================= EDUCATION ================= */
 
@@ -1318,4 +1349,75 @@ margin-bottom:8px;
 .btn-small-outline:hover{
     background:#38bdf8;
     color:white;
+}
+/* ===== FINAL MOBILE CONTACT FIX ===== */
+
+@media (max-width: 768px){
+
+    .contact{
+        width:100%;
+        box-sizing:border-box;
+        padding:70px 6%;
+        overflow:hidden;
+    }
+
+    .contact .container{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    .contact-container{
+        display:flex !important;
+        flex-direction:column !important;
+        width:100% !important;
+        max-width:100% !important;
+        gap:40px !important;
+        box-sizing:border-box;
+    }
+
+    .contact-info{
+        width:100% !important;
+        max-width:100% !important;
+        min-width:0 !important;
+        box-sizing:border-box;
+    }
+
+    .contact-form{
+        width:100% !important;
+        max-width:100% !important;
+        min-width:0 !important;
+        box-sizing:border-box;
+    }
+
+    .contact-form form{
+        width:100% !important;
+        max-width:100% !important;
+        min-width:0 !important;
+        box-sizing:border-box;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        width:100% !important;
+        max-width:100% !important;
+        box-sizing:border-box;
+    }
+
+    .contact-form button{
+        width:100%;
+        max-width:200px;
+        box-sizing:border-box;
+    }
+
+    .contact-item{
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    .contact-item span,
+    .contact-item a{
+        overflow-wrap:anywhere;
+    }
+
 }
