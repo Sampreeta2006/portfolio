@@ -154,20 +154,22 @@ portfolio/
 │       └── Sampreeta_V_Resume.pdf
 │
 └── README.md
-Deployment
+```
+
+## Deployment
 
 This portfolio is deployed using GitHub Pages.
 
-🌐 Live Website:
+🌐 **Live Website:**  
 https://sampreeta2006.github.io/portfolio/
 
-Connect With Me
+## Connect With Me
 
-GitHub:
+**GitHub:**  
 https://github.com/Sampreeta2006
 
-LinkedIn:
+**LinkedIn:**  
 https://www.linkedin.com/in/sampreeta-v-3022ab2a3
 
-Email:
+**Email:**  
 sampreeta2006@gmail.com
